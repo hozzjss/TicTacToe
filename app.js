@@ -64,9 +64,9 @@ const endGame = (option) => {
     $(".result h3").text(`Draw`);
   }
   availableMoves.clear();
-  $(".tile").click(function() {
+  setTimeout(function() {
     init("reset");
-  });
+  }, 500);
 };
 
 const makeAMove = (index, choice) => {
