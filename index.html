@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <title>Tic Tac Toe</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-      <h1>Tic Tac Toe</h1>
-      <div class="Board">
-        <!-- r == row c == column -->
-        <div class="row">
-          <div data-index="0" class="tile r1c1"></div>
-          <div data-index="1" class="tile r1c2"></div>
-          <div data-index="2" class="tile r1c3"></div>
-        </div>
-        <div class="row">
-          <div data-index="3" class="tile r2c1"></div>
-          <div data-index="4" class="tile r2c2"></div>
-          <div data-index="5" class="tile r2c3"></div>
-        </div>
-        <div class="row">
-          <div data-index="6" class="tile r3c1"></div>
-          <div data-index="7" class="tile r3c2"></div>
-          <div data-index="8" class="tile r3c3"></div>
-        </div>
-        <div class="row result">
-          <div class="col-md-12">
-            <h3></h3>
+        <h1>Tic Tac Toe</h1>
+          <div class="choice">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>The choice is yours</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 text-right">
+                <button data-value="X" class="btn btn-block btn-default">X</button>
+                <button data-value="O" class="btn btn-block btn-default">O</button>
+              </div>
+            </div>
           </div>
+        <div class="board">
+            <!-- r == row c == column -->
+            <div class="row">
+                <div data-index="0" class="tile r1c1"></div>
+                <div data-index="1" class="tile r1c2"></div>
+                <div data-index="2" class="tile r1c3"></div>
+            </div>
+            <div class="row">
+                <div data-index="3" class="tile r2c1"></div>
+                <div data-index="4" class="tile r2c2"></div>
+                <div data-index="5" class="tile r2c3"></div>
+            </div>
+            <div class="row">
+                <div data-index="6" class="tile r3c1"></div>
+                <div data-index="7" class="tile r3c2"></div>
+                <div data-index="8" class="tile r3c3"></div>
+            </div>
+            <div class="row result">
+                <div class="col-md-12">
+                    <h3></h3>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <script src="../jquery-3.1.1.min.js" charset="utf-8"></script>
     <script src="app.js" charset="utf-8"></script>
-  </body>
+</body>
+
 </html>
